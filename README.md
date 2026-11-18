@@ -2,7 +2,7 @@
 
 [![verify](https://github.com/johnchakkour/b23-class-number/actions/workflows/verify.yml/badge.svg)](https://github.com/johnchakkour/b23-class-number/actions/workflows/verify.yml)
 
-This repository contains an unconditional proof, **not assuming the Generalized Riemann Hypothesis**, that the number field $B_{23,1}$ has class number 1.
+This repository contains an unconditional proof (not assuming the Generalized Riemann Hypothesis) that the number field $B_{23,1}$ has class number 1.
 
 $B_{23,1}$ is the first layer of the cyclotomic $`\mathbb{Z}_{23}`$-extension of $\mathbb{Q}$: the unique subfield of degree 23 of $\mathbb{Q}(\zeta_{529})$, where $529 = 23^2$. That its class number is 1 was previously known under GRH; Table 1 of Miller [2] attributes this to Coates, Liang and Mihăilescu (2012).
 
