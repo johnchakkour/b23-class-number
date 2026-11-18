@@ -1,0 +1,21 @@
+Python 3.11.4
+parser accepts a good line                                   OK
+parser rejects a truncated line                              OK
+parser rejects factors that do not multiply to |N|           OK
+parser rejects an unsorted support                           OK
+parser rejects a negative first coefficient                  OK
+smallest primitive root mod 529 is 5, mod 169 is 2           OK
+output does not depend on line order or file layout          OK
+certifies 263, 2179 and 607298377879, and nothing else       OK
+263 uses the quotient trick with 607298377879 divided out    OK
+2179 uses the element with fewer nonzero coefficients        OK
+selftest PASSED
+B_{23,1}: reading 10 hit files
+lines read: 25496834
+primes certified directly: 835621
+quotient trick, round 1: +12417 primes (848038 in all)
+quotient trick, round 2: +837436 primes (1685474 in all)
+quotient trick, round 3: +356929 primes (2042403 in all)
+certificate: the 99167 certified primes <= 50000000, and 55 larger primes they depend on
+written to $SCRATCH/b23_run/b23.certificate.txt
+SHA-256 aef5bb15e4cbb889d75ddec27b7f58cf0fce73c89eb7410e0a07fa19dc18f181

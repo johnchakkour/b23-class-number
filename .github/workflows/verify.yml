@@ -1,0 +1,44 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  certificate:
+    name: Verify the certificate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r verify/requirements.txt
+      - run: python3 verify/verify_certificate.py --selftest
+      - name: Verify
+        run: |
+          python3 verify/verify_certificate.py certificate/b23.certificate.txt | tee verify.log
+          tail -n 1 verify.log | grep -qx "VERDICT: PASS -- h(B_{23,1}) = 1"
+
+  pipeline:
+    name: Search, certify and verify at small scale
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get update && sudo apt-get install -y libgmp-dev
+          pip install -r verify/requirements.txt
+      - run: gcc -DNOMPI -O2 -fopenmp -o bp1_norm_search search/bp1_norm_search.c -lgmp -lm
+      - run: ./bp1_norm_search --selftest 13 | tee st.log && grep -q "selftest PASSED" st.log
+      - run: python3 search/certify_b23.py --selftest
+      - name: Search up to weight 8, certify the primes below 10^6, verify every row
+        run: |
+          mkdir -p small
+          ./bp1_norm_search --p 23 --weights 1-8 --bound 1000000000000000 --out small/b23
+          python3 search/certify_b23.py small/b23 --cutoff 1000000 --out small/cert.txt
+          python3 verify/verify_certificate.py small/cert.txt | tee small/verify.log || true
+          grep -Eq "rows verified: [1-9][0-9]*   problems: 0" small/verify.log

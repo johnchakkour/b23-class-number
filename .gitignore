@@ -1,0 +1,5 @@
+.DS_Store
+__pycache__/
+.venv/
+bp1_norm_search
+small/

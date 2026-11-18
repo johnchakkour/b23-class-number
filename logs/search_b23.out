@@ -1,0 +1,30 @@
+selftest p=13: |N| = 19 (expected 19) split=1  OK
+selftest p=13: |N| = 23 (expected 23) split=1  OK
+selftest PASSED
+# B_{23,1}: degree 23, conductor 529, primitive root 5
+# max|eta_i| = 8.7119   CRT primes available 12, first 4611686018427392791
+# ranks=10 threads/rank=192 weights=1-23 bound=1000000000000000 comp-bound=1000000000000000 shard=0/1
+# coefficients in {-1..1}; full box ((2A+1)^23-1)/2 = 47071589413
+p=23 w= 1 np=2 candidates=23 expected=23 COVERAGE_OK hits=23 time=0.1s
+p=23 w= 2 np=2 candidates=506 expected=506 COVERAGE_OK hits=359 time=0.0s
+p=23 w= 3 np=2 candidates=7084 expected=7084 COVERAGE_OK hits=2949 time=0.0s
+p=23 w= 4 np=3 candidates=70840 expected=70840 COVERAGE_OK hits=14779 time=0.0s
+p=23 w= 5 np=3 candidates=538384 expected=538384 COVERAGE_OK hits=50782 time=0.1s
+p=23 w= 6 np=3 candidates=3230304 expected=3230304 COVERAGE_OK hits=146927 time=0.1s
+p=23 w= 7 np=3 candidates=15690048 expected=15690048 COVERAGE_OK hits=344698 time=0.4s
+p=23 w= 8 np=3 candidates=62760192 expected=62760192 COVERAGE_OK hits=742549 time=0.8s
+p=23 w= 9 np=3 candidates=209200640 expected=209200640 COVERAGE_OK hits=1322608 time=1.6s
+p=23 w=10 np=3 candidates=585761792 expected=585761792 COVERAGE_OK hits=2149754 time=3.0s
+p=23 w=11 np=3 candidates=1384527872 expected=1384527872 COVERAGE_OK hits=2964333 time=4.8s
+p=23 w=12 np=3 candidates=2769055744 expected=2769055744 COVERAGE_OK hits=3685898 time=5.6s
+p=23 w=13 np=3 candidates=4686094336 expected=4686094336 COVERAGE_OK hits=3864692 time=5.8s
+p=23 w=14 np=3 candidates=6694420480 expected=6694420480 COVERAGE_OK hits=3608903 time=5.3s
+p=23 w=15 np=3 candidates=8033304576 expected=8033304576 COVERAGE_OK hits=2827233 time=4.3s
+p=23 w=16 np=3 candidates=8033304576 expected=8033304576 COVERAGE_OK hits=1932804 time=3.7s
+p=23 w=17 np=3 candidates=6615662592 expected=6615662592 COVERAGE_OK hits=1074078 time=2.9s
+p=23 w=18 np=3 candidates=4410441728 expected=4410441728 COVERAGE_OK hits=507377 time=1.6s
+p=23 w=19 np=3 candidates=2321285120 expected=2321285120 COVERAGE_OK hits=188452 time=0.6s
+p=23 w=20 np=3 candidates=928514048 expected=928514048 COVERAGE_OK hits=54717 time=0.2s
+p=23 w=21 np=3 candidates=265289728 expected=265289728 COVERAGE_OK hits=11252 time=0.0s
+p=23 w=22 np=3 candidates=48234496 expected=48234496 COVERAGE_OK hits=1568 time=0.1s
+p=23 w=23 np=3 candidates=4194304 expected=4194304 COVERAGE_OK hits=99 time=0.1s

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The class number of B_{23,1} is 1: an unconditional computer-assisted proof"
+abstract: >-
+  A certificate and an exact verifier proving, without assuming the
+  Generalized Riemann Hypothesis, that the first layer B_{23,1} of the
+  cyclotomic Z_23-extension of Q has class number 1. The proof combines
+  Miller's explicit-formula bound on the class number with 99,222 totally
+  split primes certified to have principal prime ideals, Masley's Rank
+  Theorem and Iwasawa's theorem.
+type: software
+authors:
+  - family-names: "Chakkour"
+    given-names: "John"
+    affiliation: "University of Toronto"
+repository-code: "https://github.com/johnchakkour/b23-class-number"
+license: MIT
+keywords:
+  - algebraic number theory
+  - class number
+  - cyclotomic Z_p-extension
+  - Weber's class number problem
+  - computer-assisted proof
