@@ -32,11 +32,11 @@ Iwasawa + Rank Theorem: a class number > 1 would be at least 47
 VERDICT: PASS -- h(B_{23,1}) = 1
 ```
 
-`python3 verify/verify_certificate.py --selftest` checks the verifier against known values, including two elements of norm 19 and 23 in $\mathbb{B}_{13,1}$ from Miller [2].
+`python3 verify/verify_certificate.py --selftest` checks the verifier against known values, including two elements of norm 19 and 23 in $B_{13,1}$ from Miller [2].
 
 ## The argument
 
-Let $K = \mathbb{B}_{23,1}$ and $h$ the class number of $K$. $K$ is totally real and cyclic of degree 23 over $\mathbb{Q}$, with discriminant $23^{44}$.
+Let $K = B_{23,1}$ and $h$ the class number of $K$. $K$ is totally real and cyclic of degree 23 over $\mathbb{Q}$, with discriminant $23^{44}$.
 
 **Step 1: principal prime ideals.** A prime $q$ splits completely in $K$ exactly when $q^{22} \equiv 1 \pmod{529}$. Note that every other prime except 23 is inert. Take a split prime $q$. If an algebraic integer $\alpha \in K$ has $N(\alpha) = \pm q$, then $(\alpha)$ is a prime ideal above $q$, so that ideal is principal. Since $K/\mathbb{Q}$ is Galois, every prime ideal above $q$ is principal.
 
