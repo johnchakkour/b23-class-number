@@ -2,11 +2,13 @@
 
 [![verify](https://github.com/johnchakkour/b23-class-number/actions/workflows/verify.yml/badge.svg)](https://github.com/johnchakkour/b23-class-number/actions/workflows/verify.yml)
 
-This repository contains a proof, **not assuming the Generalized Riemann Hypothesis**, that the number field $B_{23,1}$ has class number 1.
+This repository contains an unconditional proof, **not assuming the Generalized Riemann Hypothesis**, that the number field $B_{23,1}$ has class number 1.
 
 $B_{23,1}$ is the first layer of the cyclotomic $`\mathbb{Z}_{23}`$-extension of $\mathbb{Q}$: the unique subfield of degree 23 of $\mathbb{Q}(\zeta_{529})$, where $529 = 23^2$. That its class number is 1 was previously known under GRH; Table 1 of Miller [2] attributes this to Coates, Liang and Mihăilescu (2012).
 
 The proof consists of a **certificate**, [`certificate/b23.certificate.txt`](certificate/b23.certificate.txt), and a **verifier**, [`verify/verify_certificate.py`](verify/verify_certificate.py), which checks the certificate and completes the argument below. The verifier uses only exact integer arithmetic and interval arithmetic.
+
+The C code in this repository was written with the help of Claude Opus 5.5.
 
 ## Checking the proof
 
