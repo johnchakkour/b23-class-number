@@ -4,7 +4,7 @@
 
 This repository contains a proof, **not assuming the Generalized Riemann Hypothesis**, that the number field $B_{23,1}$ has class number 1.
 
-$B_{23,1}$ is the first layer of the cyclotomic $\mathbb{Z}_{23}$-extension of $\mathbb{Q}$: the unique subfield of degree 23 of $\mathbb{Q}(\zeta_{529})$, where $529 = 23^2$. That its class number is 1 was previously known under GRH; Table 1 of Miller [2] attributes this to Coates, Liang and Mihăilescu (2012).
+$B_{23,1}$ is the first layer of the cyclotomic $`\mathbb{Z}_{23}`$-extension of $\mathbb{Q}$: the unique subfield of degree 23 of $\mathbb{Q}(\zeta_{529})$, where $529 = 23^2$. That its class number is 1 was previously known under GRH; Table 1 of Miller [2] attributes this to Coates, Liang and Mihăilescu (2012).
 
 The proof consists of a **certificate**, [`certificate/b23.certificate.txt`](certificate/b23.certificate.txt), and a **verifier**, [`verify/verify_certificate.py`](verify/verify_certificate.py), which checks the certificate and completes the argument below. The verifier uses only exact integer arithmetic and interval arithmetic.
 
@@ -121,7 +121,7 @@ Both programs have self-tests (`./bp1_norm_search --selftest 13`, `python3 searc
 ## References
 
 1. J. C. Miller, *Real cyclotomic fields of prime conductor and their class numbers*, Math. Comp. **84** (2015), 2459–2469. Lemma 3.1.
-2. J. C. Miller, *Class numbers in cyclotomic $\mathbb{Z}_p$-extensions*, J. Number Theory **150** (2015), 47–73.
+2. J. C. Miller, *Class numbers in cyclotomic $`\mathbb{Z}_p`$-extensions*, J. Number Theory **150** (2015), 47–73.
 3. K. Iwasawa, *A note on class numbers of algebraic number fields*, Abh. Math. Sem. Univ. Hamburg **20** (1956), 257–258.
 4. J. M. Masley, *Class numbers of real cyclic number fields with small conductor*, Compositio Math. **37** (1978), 297–319. Corollary 2.15.
 
