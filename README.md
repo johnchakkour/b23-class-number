@@ -48,11 +48,11 @@ More generally, it is enough that $N(\alpha)$ is $\pm q$ times primes whose prim
 
 **Step 2: an upper bound.** Lemma 3.1 of Miller [1] turns a set $S$ of such primes into a bound on $h$. Let $c > 0$, $F(x) = e^{-(x/c)^2}/\cosh(x/2)$, and
 
-$$
+```math
 B = \frac{\pi}{2} + \gamma + \log 8\pi - \log \mathrm{rd}_K
   - \int_0^\infty \frac{1 - F(x)}{2}\left(\frac{1}{\sinh(x/2)} + \frac{1}{\cosh(x/2)}\right)dx
   + 2\sum_{q \in S}\sum_{m \ge 1} \frac{\log q}{q^{m/2}}\, F(m \log q),
-$$
+```
 
 where $\mathrm{rd}_K = 23^{44/23}$ is the root discriminant. If $B > 0$, then $h < 2c\sqrt{\pi}/(23B)$. With the 99,222 primes of the certificate and $c = 50$, this gives $h < 37.72$.
 
@@ -62,9 +62,9 @@ where $\mathrm{rd}_K = 23^{44/23}$ is the root discriminant. If $B > 0$, then $h
 
 Elements are written in the basis
 
-$$
+```math
 b_0 = 1, \qquad b_j = \sum_{h \in H} \zeta^{5^{j-1} h} \quad (1 \le j \le 22),
-$$
+```
 
 where $\zeta = e^{2\pi i/529}$ and $H$ is the subgroup of order 22 of $(\mathbb{Z}/529)^\times$. Each row certifies one prime. For example, this row (shown on three lines here, one line in the file):
 
